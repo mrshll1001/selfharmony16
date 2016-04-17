@@ -13,6 +13,7 @@ var person2 = "<p>I am a Selfharmer </p>" + "<p><span class='highlight-yellow' i
 $('#person-0-btn').click(function(e){
   $('#content-container').fadeOut('slow', function(){
     $('#content-container').html(person0);
+    $('#comment-box').html('');
     $('#content-container').fadeIn('slow');
   });
 
@@ -26,6 +27,7 @@ $('#person-0-btn').click(function(e){
 $('#person-1-btn').click(function(e){
   $('#content-container').fadeOut('slow', function(){
     $('#content-container').html(person1);
+    $('#comment-box').html('');
     $('.person-1-blur').addClass('blurry');
     $('#content-container').fadeIn('slow');
   });
@@ -38,6 +40,7 @@ $('#person-1-btn').click(function(e){
 $('#person-2-btn').click(function(e){
   $('#content-container').fadeOut('slow', function(){
     $('#content-container').html(person2);
+    $('#comment-box').html('');
     $('.person-2-blur').addClass('blurry');
     $('#content-container').fadeIn('slow');
   });
@@ -64,6 +67,30 @@ $('#content-container').on('click', '#p1-comment3', function(e){
 
 $('#content-container').on('click', '#p1-comment4', function(e){
   var html = "<p>When you first told us, it was hard to understand and we couldn’t understand why?</p>";
+
+  $('#comment-box').html(html);
+});
+// ============================================================================================================================================================
+$('#content-container').on('click', '#p2-comment1', function(e){
+  var html = "<p>When you told me at first I didn’t know what to do</p>";
+
+  $('#comment-box').html(html);
+});
+
+$('#content-container').on('click', '#p2-comment2', function(e){
+  var html = "<p>I wondered do I leave you to your own accord or do I take action? Will my actions do more harm than good? Do I need to watch you?</p>";
+
+  $('#comment-box').html(html);
+});
+
+$('#content-container').on('click', '#p2-comment3', function(e){
+  var html = "<p>But now Im glad that we talked it through and I now know what u need from me and a bit more why this is going on.</p>";
+
+  $('#comment-box').html(html);
+});
+
+$('#content-container').on('click', '#p2-comment4', function(e){
+  var html = "<p>It has been reassuring to understand the position you're in and now I no longer feel left in the dark.</p>";
 
   $('#comment-box').html(html);
 });
