@@ -10,3 +10,24 @@
 .readable{
   font-size: 18pt;
 }
+
+.highlight-yellow {
+  background-color: yellow;
+}
+
+.highlight-teal {
+  background-color: teal;
+  color: white;
+}
+
+.highlight-purple {
+  background-color: purple;
+}
+
+.highlight-cyan {
+  background-color: cyan;
+}
+
+#comment-container {
+  position: fixed;
+}
